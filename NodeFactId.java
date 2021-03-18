@@ -22,7 +22,9 @@ public class NodeFactId extends NodeFact {
      * @throws EvalException
      */
     public Double eval(Environment env) throws EvalException {
-	return env.get(pos,id);
+	return env.get(id);
     }
-
+    public String toString(){
+        return id;
+    }
 }

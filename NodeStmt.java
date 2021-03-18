@@ -14,6 +14,9 @@ public class NodeStmt extends Node {
 	this.assn=assn;
     }
 
+    public NodeStmt() {
+    }
+
     /**
      * evaluates
      * @param env - environment

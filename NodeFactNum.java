@@ -22,5 +22,5 @@ public class NodeFactNum extends NodeFact {
     public Double eval(Environment env) throws EvalException {
 	return Double.parseDouble(num);
     }
-
+    public String toString(){ return num;}
 }

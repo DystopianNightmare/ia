@@ -15,7 +15,7 @@ public class Interpreter {
 		Environment env = new Environment();                        //get new environment
 		for (String stmt : args) {                               	 //for each (string) stmt in args do
 			try {                                               	 //begin try/catch
-				System.out.println(parser.parse(stmt).eval(env));    //print the result of parseing the args array
+				parser.parse(stmt).eval(env);    //print the result of parseing the args array
 			} catch (SyntaxException e) {                      		  //catch syntaxexception
 				System.err.println(e);                         	       //print the error to stderr
 			} catch (EvalException e) {                        	    //catch evalexception

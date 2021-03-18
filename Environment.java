@@ -37,5 +37,7 @@ public class Environment {
 
         return Double.valueOf(String.valueOf(map.get(var)));
     }
-
+    public double get(String var){
+        return Double.valueOf(String.valueOf(map.get(var)));
+    }
 }
